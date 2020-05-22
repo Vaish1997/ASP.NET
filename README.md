@@ -1,1 +1,2 @@
 # ASP.NET
+JustLikeNew is a ASP.NET/C# web forms application that serves as an online platform for selling and buying used gadgets. The application facilitates creation of a new account, Updating profile details, password resets, viewing existing ads and Implements a Master-Content page design Uses standard ASP controls, menu item controls, validation controls for implementing various modules in the webpages. Microsoft Access is used as the Database
