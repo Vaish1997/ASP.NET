@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RestofthesiteMaster.master.cs" Inherits="JustLikeNew.RestofthesiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href ="styles/MasterPage.css" type ="text/css" rel ="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <ul>
+                          <li><asp:ImageButton ID ="homeImage" runat="server" ImageUrl="~/Images/likenew.png" style ="width:80px;height:40px;"/></li>
+                          <li style ="float:right"><a href ="aboutSite.aspx" ID="about" runat ="server">ABOUT</a></li>
+                          <li style ="float:right"><a href ="login.aspx" id ="login" runat ="server">LOGOUT</a></li>
+                      </ul> 
+            <div>
+                <div id ="menu" style ="width:20%;height:100%;position:absolute;left:0; top:20%;">
+                    <asp:TreeView ID="Catalog" runat="server" ForeColor="#666666" Height="283px">
+                        <HoverNodeStyle Height="100px" />
+                        <Nodes>
+                            <asp:TreeNode Text="All Products" NavigateUrl ="~/ViewProducts.aspx"/>  
+                      <asp:TreeNode Text="Products By Catagory">    
+                      <asp:TreeNode Text="Laptops" NavigateUrl ="~/ViewByLaptop.aspx" />    
+                      <asp:TreeNode Text="Mobile Phones" NavigateUrl ="~/ViewByMobile.aspx"/>    
+                      <asp:TreeNode Text ="HeadPhones And Earphones" NavigateUrl = "~/ViewByHeadPhone.aspx"/>
+                   </asp:TreeNode>    
+                        </Nodes>
+                    </asp:TreeView>
+                    
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

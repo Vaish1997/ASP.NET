@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="JustLikeNew.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href ="styles/MasterPage.css" type ="text/css" rel ="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+               
+                   
+                
+                      <ul>
+                          <li><asp:ImageButton ID ="homeImage" runat="server" ImageUrl="~/Images/likenew.png" style ="width:80px;height:40px;"/></li>
+                          <li style ="float:right"><a href ="aboutSite.aspx" ID="about" runat ="server">ABOUT</a></li>
+                          <li style ="float:right"><a href ="login.aspx" id ="login" runat ="server">SIGN IN</a></li>
+                      </ul> 
+                
+                   
+                      
+                   
+                   
+           <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+            </div>
+       
+    </form>
+</body>
+</html>
